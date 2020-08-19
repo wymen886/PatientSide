@@ -1,0 +1,194 @@
+--- Logging error ---
+Traceback (most recent call last):
+  File "d:\program files\python37\lib\logging\__init__.py", line 1034, in emit
+    msg = self.format(record)
+  File "d:\program files\python37\lib\logging\__init__.py", line 880, in format
+    return fmt.format(record)
+  File "d:\program files\python37\lib\logging\__init__.py", line 619, in format
+    record.message = record.getMessage()
+  File "d:\program files\python37\lib\logging\__init__.py", line 380, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "d:\program files\python37\lib\runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "d:\program files\python37\lib\runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "D:\Program Files\Python37\Scripts\pytest.exe\__main__.py", line 9, in <module>
+    sys.exit(main())
+  File "d:\program files\python37\lib\site-packages\_pytest\config\__init__.py", line 125, in main
+    config=config
+  File "d:\program files\python37\lib\site-packages\pluggy\hooks.py", line 286, in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+  File "d:\program files\python37\lib\site-packages\pluggy\manager.py", line 93, in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+  File "d:\program files\python37\lib\site-packages\pluggy\manager.py", line 87, in <lambda>
+    firstresult=hook.spec.opts.get("firstresult") if hook.spec else False,
+  File "d:\program files\python37\lib\site-packages\pluggy\callers.py", line 187, in _multicall
+    res = hook_impl.function(*args)
+  File "d:\program files\python37\lib\site-packages\_pytest\main.py", line 240, in pytest_cmdline_main
+    return wrap_session(config, _main)
+  File "d:\program files\python37\lib\site-packages\_pytest\main.py", line 191, in wrap_session
+    session.exitstatus = doit(config, session) or 0
+  File "d:\program files\python37\lib\site-packages\_pytest\main.py", line 247, in _main
+    config.hook.pytest_runtestloop(session=session)
+  File "d:\program files\python37\lib\site-packages\pluggy\hooks.py", line 286, in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+  File "d:\program files\python37\lib\site-packages\pluggy\manager.py", line 93, in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+  File "d:\program files\python37\lib\site-packages\pluggy\manager.py", line 87, in <lambda>
+    firstresult=hook.spec.opts.get("firstresult") if hook.spec else False,
+  File "d:\program files\python37\lib\site-packages\pluggy\callers.py", line 187, in _multicall
+    res = hook_impl.function(*args)
+  File "d:\program files\python37\lib\site-packages\_pytest\main.py", line 272, in pytest_runtestloop
+    item.config.hook.pytest_runtest_protocol(item=item, nextitem=nextitem)
+  File "d:\program files\python37\lib\site-packages\pluggy\hooks.py", line 286, in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+  File "d:\program files\python37\lib\site-packages\pluggy\manager.py", line 93, in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+  File "d:\program files\python37\lib\site-packages\pluggy\manager.py", line 87, in <lambda>
+    firstresult=hook.spec.opts.get("firstresult") if hook.spec else False,
+  File "d:\program files\python37\lib\site-packages\pluggy\callers.py", line 187, in _multicall
+    res = hook_impl.function(*args)
+  File "d:\program files\python37\lib\site-packages\_pytest\runner.py", line 85, in pytest_runtest_protocol
+    runtestprotocol(item, nextitem=nextitem)
+  File "d:\program files\python37\lib\site-packages\_pytest\runner.py", line 100, in runtestprotocol
+    reports.append(call_and_report(item, "call", log))
+  File "d:\program files\python37\lib\site-packages\_pytest\runner.py", line 186, in call_and_report
+    call = call_runtest_hook(item, when, **kwds)
+  File "d:\program files\python37\lib\site-packages\_pytest\runner.py", line 217, in call_runtest_hook
+    lambda: ihook(item=item, **kwds), when=when, reraise=reraise
+  File "d:\program files\python37\lib\site-packages\_pytest\runner.py", line 244, in from_call
+    result = func()
+  File "d:\program files\python37\lib\site-packages\_pytest\runner.py", line 217, in <lambda>
+    lambda: ihook(item=item, **kwds), when=when, reraise=reraise
+  File "d:\program files\python37\lib\site-packages\pluggy\hooks.py", line 286, in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+  File "d:\program files\python37\lib\site-packages\pluggy\manager.py", line 93, in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+  File "d:\program files\python37\lib\site-packages\pluggy\manager.py", line 87, in <lambda>
+    firstresult=hook.spec.opts.get("firstresult") if hook.spec else False,
+  File "d:\program files\python37\lib\site-packages\pluggy\callers.py", line 187, in _multicall
+    res = hook_impl.function(*args)
+  File "d:\program files\python37\lib\site-packages\_pytest\runner.py", line 135, in pytest_runtest_call
+    item.runtest()
+  File "d:\program files\python37\lib\site-packages\_pytest\python.py", line 1477, in runtest
+    self.ihook.pytest_pyfunc_call(pyfuncitem=self)
+  File "d:\program files\python37\lib\site-packages\pluggy\hooks.py", line 286, in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+  File "d:\program files\python37\lib\site-packages\pluggy\manager.py", line 93, in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+  File "d:\program files\python37\lib\site-packages\pluggy\manager.py", line 87, in <lambda>
+    firstresult=hook.spec.opts.get("firstresult") if hook.spec else False,
+  File "d:\program files\python37\lib\site-packages\pluggy\callers.py", line 187, in _multicall
+    res = hook_impl.function(*args)
+  File "d:\program files\python37\lib\site-packages\_pytest\python.py", line 182, in pytest_pyfunc_call
+    result = testfunction(**testargs)
+  File "F:\WorkSpaces\Python\PatientSide\cases\test_store.py", line 120, in test_pay
+    log.log.info('pay获取的值:', order_num)
+Message: 'pay获取的值:'
+Arguments: ('5f3cd40a5a1bbb7df2ad392b',)
+--- Logging error ---
+Traceback (most recent call last):
+  File "d:\program files\python37\lib\logging\__init__.py", line 1034, in emit
+    msg = self.format(record)
+  File "d:\program files\python37\lib\logging\__init__.py", line 880, in format
+    return fmt.format(record)
+  File "d:\program files\python37\lib\site-packages\_pytest\logging.py", line 74, in format
+    return super().format(record)
+  File "d:\program files\python37\lib\logging\__init__.py", line 619, in format
+    record.message = record.getMessage()
+  File "d:\program files\python37\lib\logging\__init__.py", line 380, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "d:\program files\python37\lib\runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "d:\program files\python37\lib\runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "D:\Program Files\Python37\Scripts\pytest.exe\__main__.py", line 9, in <module>
+    sys.exit(main())
+  File "d:\program files\python37\lib\site-packages\_pytest\config\__init__.py", line 125, in main
+    config=config
+  File "d:\program files\python37\lib\site-packages\pluggy\hooks.py", line 286, in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+  File "d:\program files\python37\lib\site-packages\pluggy\manager.py", line 93, in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+  File "d:\program files\python37\lib\site-packages\pluggy\manager.py", line 87, in <lambda>
+    firstresult=hook.spec.opts.get("firstresult") if hook.spec else False,
+  File "d:\program files\python37\lib\site-packages\pluggy\callers.py", line 187, in _multicall
+    res = hook_impl.function(*args)
+  File "d:\program files\python37\lib\site-packages\_pytest\main.py", line 240, in pytest_cmdline_main
+    return wrap_session(config, _main)
+  File "d:\program files\python37\lib\site-packages\_pytest\main.py", line 191, in wrap_session
+    session.exitstatus = doit(config, session) or 0
+  File "d:\program files\python37\lib\site-packages\_pytest\main.py", line 247, in _main
+    config.hook.pytest_runtestloop(session=session)
+  File "d:\program files\python37\lib\site-packages\pluggy\hooks.py", line 286, in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+  File "d:\program files\python37\lib\site-packages\pluggy\manager.py", line 93, in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+  File "d:\program files\python37\lib\site-packages\pluggy\manager.py", line 87, in <lambda>
+    firstresult=hook.spec.opts.get("firstresult") if hook.spec else False,
+  File "d:\program files\python37\lib\site-packages\pluggy\callers.py", line 187, in _multicall
+    res = hook_impl.function(*args)
+  File "d:\program files\python37\lib\site-packages\_pytest\main.py", line 272, in pytest_runtestloop
+    item.config.hook.pytest_runtest_protocol(item=item, nextitem=nextitem)
+  File "d:\program files\python37\lib\site-packages\pluggy\hooks.py", line 286, in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+  File "d:\program files\python37\lib\site-packages\pluggy\manager.py", line 93, in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+  File "d:\program files\python37\lib\site-packages\pluggy\manager.py", line 87, in <lambda>
+    firstresult=hook.spec.opts.get("firstresult") if hook.spec else False,
+  File "d:\program files\python37\lib\site-packages\pluggy\callers.py", line 187, in _multicall
+    res = hook_impl.function(*args)
+  File "d:\program files\python37\lib\site-packages\_pytest\runner.py", line 85, in pytest_runtest_protocol
+    runtestprotocol(item, nextitem=nextitem)
+  File "d:\program files\python37\lib\site-packages\_pytest\runner.py", line 100, in runtestprotocol
+    reports.append(call_and_report(item, "call", log))
+  File "d:\program files\python37\lib\site-packages\_pytest\runner.py", line 186, in call_and_report
+    call = call_runtest_hook(item, when, **kwds)
+  File "d:\program files\python37\lib\site-packages\_pytest\runner.py", line 217, in call_runtest_hook
+    lambda: ihook(item=item, **kwds), when=when, reraise=reraise
+  File "d:\program files\python37\lib\site-packages\_pytest\runner.py", line 244, in from_call
+    result = func()
+  File "d:\program files\python37\lib\site-packages\_pytest\runner.py", line 217, in <lambda>
+    lambda: ihook(item=item, **kwds), when=when, reraise=reraise
+  File "d:\program files\python37\lib\site-packages\pluggy\hooks.py", line 286, in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+  File "d:\program files\python37\lib\site-packages\pluggy\manager.py", line 93, in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+  File "d:\program files\python37\lib\site-packages\pluggy\manager.py", line 87, in <lambda>
+    firstresult=hook.spec.opts.get("firstresult") if hook.spec else False,
+  File "d:\program files\python37\lib\site-packages\pluggy\callers.py", line 187, in _multicall
+    res = hook_impl.function(*args)
+  File "d:\program files\python37\lib\site-packages\_pytest\runner.py", line 135, in pytest_runtest_call
+    item.runtest()
+  File "d:\program files\python37\lib\site-packages\_pytest\python.py", line 1477, in runtest
+    self.ihook.pytest_pyfunc_call(pyfuncitem=self)
+  File "d:\program files\python37\lib\site-packages\pluggy\hooks.py", line 286, in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+  File "d:\program files\python37\lib\site-packages\pluggy\manager.py", line 93, in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+  File "d:\program files\python37\lib\site-packages\pluggy\manager.py", line 87, in <lambda>
+    firstresult=hook.spec.opts.get("firstresult") if hook.spec else False,
+  File "d:\program files\python37\lib\site-packages\pluggy\callers.py", line 187, in _multicall
+    res = hook_impl.function(*args)
+  File "d:\program files\python37\lib\site-packages\_pytest\python.py", line 182, in pytest_pyfunc_call
+    result = testfunction(**testargs)
+  File "F:\WorkSpaces\Python\PatientSide\cases\test_store.py", line 120, in test_pay
+    log.log.info('pay获取的值:', order_num)
+  File "d:\program files\python37\lib\logging\__init__.py", line 1383, in info
+    self._log(INFO, msg, args, **kwargs)
+  File "d:\program files\python37\lib\logging\__init__.py", line 1519, in _log
+    self.handle(record)
+  File "d:\program files\python37\lib\logging\__init__.py", line 1529, in handle
+    self.callHandlers(record)
+  File "d:\program files\python37\lib\logging\__init__.py", line 1591, in callHandlers
+    hdlr.handle(record)
+  File "d:\program files\python37\lib\logging\__init__.py", line 905, in handle
+    self.emit(record)
+  File "d:\program files\python37\lib\site-packages\_pytest\logging.py", line 310, in emit
+    logging.StreamHandler.emit(self, record)
+Message: 'pay获取的值:'
+Arguments: ('5f3cd40a5a1bbb7df2ad392b',)

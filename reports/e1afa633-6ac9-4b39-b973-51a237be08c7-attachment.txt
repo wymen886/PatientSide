@@ -1,0 +1,4 @@
+[32mINFO    [0m test:test_login.py:29 参数无误，准备启动APP......
+[32mINFO    [0m test:test_login.py:31 APP启动完成！！
+[32mINFO    [0m test:test_login.py:48 登录>>>>>>>>
+[32mINFO    [0m test:test_login.py:54 *********切换至个人中心**********

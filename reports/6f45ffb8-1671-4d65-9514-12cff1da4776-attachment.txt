@@ -1,0 +1,6 @@
+[32mINFO    [0m test:test_store.py:30 参数无误，准备启动APP......
+[32mINFO    [0m test:test_store.py:32 APP启动完成！！
+[32mINFO    [0m test:test_store.py:55 *********切换至商城**********
+
+[32mINFO    [0m test:test_store.py:59 正在搜索商品“痛经暖贴”......
+[32mINFO    [0m test:test_store.py:68 商品搜索成功！
