@@ -11,4 +11,4 @@ class TestPatientSide:
 
     @allure.testcase("https://ceshiren.com/t/topic/5399")
     def test_case2(self):
-        assert 6 == 6, "两者不等"1
+        assert 6 == 6, "两者不等"
